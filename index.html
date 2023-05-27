@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="cache-control" content="no-cache" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Encriptador de texto AZD-dot</title>
+        <link rel="stylesheet" href="style-encriptador.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <img class="logo" src="img/Logo.png" alt="logo de alura">
+        </header>
+        
+        <main>
+
+            <section class="seccion1">
+            <div>
+                <textarea class="text-area" cols="40" rows="10" placeholder="Ingresa el texto que deseas encriptar "></textarea>
+            </div>    
+            <div class="informacion">
+                <p>&#128712 Ingresar solo letras minúsculas y sin acento.</p>
+                </div>
+                <div class="botones">
+                    <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                    <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                </div>
+            
+            </section>
+            <section class="seccion2">
+                <div class="imagenmuneco">
+                    <img src="img/Muñeco.png">
+                </div>
+                <div class="contenedormuneco">
+                    <h2>Ningún mensaje fue encontrado</h2>
+                    <p>Ingresa el texto que desees  encriptar o desencriptar.</p>
+                </div>
+                <div class="contenedorcopiar">
+                    <input type="button" class="btn-copiar" value="Copiar" onclick="copiar()" >
+                </div> 
+                <div class="contenedorresultado">
+                    <textarea class="mensaje" cols="20" raws="10" readonly></textarea>
+                </div>
+            </section>
+        </main>
+    
+    </body>
+
+    <script src="script.js"></script>
+
+    <footer>
+        <p class="copyright">&copy Copyright AZD-dot - 2023</p>
+    </footer>
+</html>
